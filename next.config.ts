@@ -1,9 +1,16 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
 
+  // Required for GitHub Pages
+  output: "export",
+  trailingSlash: true,
   images: {
+    unoptimized: true,
+
     remotePatterns: [
       {
         protocol: "https",
@@ -43,10 +50,6 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "www.rolandli.me",
-      },
-      {
-        protocol: "https",
         hostname: "s.hdnux.com",
       },
       {
@@ -59,6 +62,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+
+  // Only needed for a project repository
+  basePath: isProd ? "/Roland-Portfolio" : "",
+  assetPrefix: isProd ? "/Roland-Portfolio/" : "",
 };
 
 export default nextConfig;
