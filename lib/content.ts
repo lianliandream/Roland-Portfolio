@@ -1,6 +1,9 @@
 import { link } from "fs/promises";
 import Image from "next/image";
 
+const basePath =
+  process.env.NODE_ENV === "production" ? "/Roland-Portfolio" : "";
+
 export const images = {
   book: [
     "https://m.media-amazon.com/images/I/712KZuSrGsL._SL1500_.jpg",
@@ -32,9 +35,9 @@ export const images = {
   archive: [
     "https://s.wsj.net/public/resources/images/NY-BZ223_NYWTD_P_20121028173915.jpg",
     "https://static01.nyt.com/images/2012/10/10/business/Hotels1/Hotels1-superJumbo.jpg?quality=75&auto=webp",
-    "/images/nyc.jpg",
-    "/images/eisley.jpg",
-    "/images/IPL.jpg",
+    `${basePath}/images/nyc.jpg`,
+    `${basePath}/images/eisley.jpg`,
+    `${basePath}/images/IPL.jpg`,
     "https://s.wsj.net/public/resources/images/NY-CA309_NYWTD_DV_20121118184117.jpg",
   ],
 };
