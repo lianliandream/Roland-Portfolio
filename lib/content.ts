@@ -32,7 +32,7 @@ export const images = {
   archive: [
     "https://s.wsj.net/public/resources/images/NY-BZ223_NYWTD_P_20121028173915.jpg",
     "https://static01.nyt.com/images/2012/10/10/business/Hotels1/Hotels1-superJumbo.jpg?quality=75&auto=webp",
-    "/images/nyc-700x466.jpg",
+    "/images/nyc.jpg",
     "/images/eisley.jpg",
     "/images/IPL.jpg",
     "https://s.wsj.net/public/resources/images/NY-CA309_NYWTD_DV_20121118184117.jpg",
@@ -187,7 +187,6 @@ export const archiveArticles = [
 
   {
     title: "On Leaving New York",
-    publication: "N/A",
     year: "2014",
     summary: "I’m moving to San Francisco next month",
     image: images.archive[2],
@@ -196,7 +195,6 @@ export const archiveArticles = [
 
   {
     title: "10 Years of Eisley",
-    publication: "N/A",
     year: "2015",
     summary:
       "But music is not just a career for the band, but a fundamental purpose.",
@@ -206,7 +204,6 @@ export const archiveArticles = [
 
   {
     title: "2011: The Year of Esports",
-    publication: "N/A",
     year: "2011",
     summary: "The year of esports is here, and it's bigger than ever.",
     image: images.archive[4],

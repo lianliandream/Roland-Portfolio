@@ -6,7 +6,6 @@ import { CareerTimeline } from "@/components/timeline/career-timeline";
 import { PhotographyPreview } from "@/components/photography/photography-preview";
 import { Quote } from "@/components/quote/quote";
 import { SiteFooter } from "@/components/footer/site-footer";
-import Image from "next/image";
 
 export default function Home() {
   return (
